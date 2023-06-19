@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-//    compileSdkVersion 33
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.example.cupcake"
@@ -28,13 +28,14 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1 .8
-        targetCompatibility JavaVersion.VERSION_1 .8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = '17'
     }
+    namespace 'com.example.cupcake'
 }
 
 dependencies {

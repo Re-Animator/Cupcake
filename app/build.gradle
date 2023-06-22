@@ -41,6 +41,8 @@ android {
 dependencies {
     def nav_version = "2.6.0"
     def lifecycle_version = "2.6.1"
+    def junit_version = "4.13.2"
+    def arch_version = "2.2.0"
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -51,4 +53,9 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     implementation 'com.google.android.material:material:1.9.0'
+
+    // junit4
+    testImplementation "junit:junit:$junit_version"
+    // arch
+    testImplementation "androidx.arch.core:core-testing:$arch_version"
 }
